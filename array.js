@@ -1,6 +1,10 @@
 
 let arr = [10,20,20.4,"Rahul",{name:"naga"},[1,2]];
 
+let arr1 = [1,2,3,4];
+let arr3 = arr1.join('');
+console.log(arr3);
+
 console.log(arr[2]);
 console.log(arr[3]);
 console.log(arr[4]);
