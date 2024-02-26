@@ -39,5 +39,5 @@ let filterMethod = arr.filter(function(num){
 console.log(filterMethod);
 
 let mapMethod = arr.map(function(num,i){
- return num * num[i]
+ return num * i
 })
