@@ -4,14 +4,17 @@
 let string = "hello";
 
 function solution(str) {
-    // Termination condition: if the string length is zero or one, return the string
-    if (str.length <= 1) {
-        return str;
-    }
-
-    // Make the recursive call with the string excluding the last character
-    return str.slice(-1) + solution(str.slice(0, -1));
+    return str.split('').reverse().join('');
 }
 
-
 console.log(solution(string));
+
+function solution1(str) {
+    let reverseStr = [];
+    for(let i = str.length-1; i >=0; i--){
+        reverseStr.push(str[i]);
+    }
+    return reverseStr.join('');
+}
+
+console.log(solution1(string));
