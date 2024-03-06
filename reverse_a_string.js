@@ -18,3 +18,20 @@ function solution1(str) {
 }
 
 console.log(solution1(string));
+
+// reversre a each words in an given string
+
+let orgStr = "reversre a each words in an given string";
+
+function reverseWords(str){
+    const result = [];
+    const words = str.split(' ');
+    words.forEach((word) => {
+        console.log(word);
+        let reverse = word.split('').reverse().join('');
+        result.push(reverse);
+    });
+    return result.join(' ');
+}
+
+console.log(reverseWords(orgStr));
