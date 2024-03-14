@@ -16,7 +16,7 @@ function palindrome(x){
         right--;
     }
     return true
-}
+} 
 
 console.log(palindrome(12321));
 
