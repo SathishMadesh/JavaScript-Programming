@@ -9,7 +9,8 @@ function diffrence(arr){
         //console.log(arr[i]);
         for (let j=i; j < arr.length; j++){
             // console.log(arr[i],arr[j]);
-            if (Math.abs(arr[i]-arr[j]) === k){
+            if (Math.abs(arr[i]-arr[j]) === k){  
+                // Math.abs() gives the absolute value of the diffrence like if it's negative value, change it to positive
                 result.push([arr[i],arr[j]]);
                 
             }
